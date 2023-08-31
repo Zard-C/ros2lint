@@ -35,3 +35,9 @@ sudo ln -s /path/to/install /opt/ros/${ROS_DISTRO}
 ## Docker Hub
 
 The Docker Image is available on Docker Hub. It's based on `Ubuntu 20.04` and `ROS2 Humble`.
+
+[Docker Hub](https://hub.docker.com/repository/docker/tonghezhang/ros2_x86/general)
+
+```bash
+docker pull tonghezhang/ros2_x86:humble_lint
+```
