@@ -39,7 +39,7 @@ The Docker Image is available on Docker Hub. It's based on `Ubuntu 20.04` and `R
 [Docker Hub](https://hub.docker.com/repository/docker/tonghezhang/ros2_x86/general)
 
 ```bash
-docker pull tonghezhang/ros2_x86:humble_lint
+docker pull tonghezhang/ros2_x86:humble_lint_0.1
 ```
 
 ### Run
