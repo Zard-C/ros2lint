@@ -50,6 +50,12 @@ example:
 sudo docker run --shm-size=1024m --name ros2_humble_lint --privileged -it -d -p 2337:22 -p 4907:4000 -v /Users/zhangtonghe/share:/share   tonghezhang/ros2_x86:humble_lint   /bin/bash
 ```
 
+### Limitation
+
+0. The Docker Image is based on `Ubuntu 20.04` and `ROS2 Humble`. It's not possible to run the image on a host with a different OS or ROS2 version.
+
+1. Using `iceoryx` as the RMW implementation is not always supported due to [#1776](https://github.com/eclipse-iceoryx/iceoryx/issues/1176), so we recommand `rmw_fastrtps_cpp` as the default RMW implementation. But you can find a solution in [#1776](https://github.com/eclipse-iceoryx/iceoryx/issues/1176) to use `iceoryx` as the RMW implementation.
+
 ### Docker update record
 
 [Update Record](doc/UpdateRecord.md)
