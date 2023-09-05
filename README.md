@@ -39,7 +39,7 @@ The Docker Image is available on Docker Hub. It's based on `Ubuntu 20.04` and `R
 [Docker Hub](https://hub.docker.com/repository/docker/tonghezhang/ros2_x86/general)
 
 ```bash
-docker pull tonghezhang/ros2_x86:humble_lint_0.1
+docker pull tonghezhang/ros2_x86:humble_lint_0.2
 ```
 
 ### Run
@@ -47,7 +47,7 @@ docker pull tonghezhang/ros2_x86:humble_lint_0.1
 example:
 
 ```bash
-sudo docker run --shm-size=1024m --name ros2_humble_lint --privileged -it -d -p 2337:22 -p 4907:4000 -v /Users/zhangtonghe/share:/share   tonghezhang/ros2_x86:humble_lint   /bin/bash
+sudo docker run --shm-size=1024m --name ros2_humble_lint --privileged -it -d -p 2337:22 -p 4907:4000 -v /Users/zhangtonghe/share:/share   tonghezhang/ros2_x86:[tag]   /bin/bash
 ```
 
 ### Limitation
