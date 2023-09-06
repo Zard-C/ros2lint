@@ -28,3 +28,10 @@ Due to issue [#1776](https://github.com/eclipse-iceoryx/iceoryx/issues/1176)
 >
 > In Windows we do not support ACLs at all and replaced the libacl implementation with a stub implementation.
 > When you copy the windows acl.hpp file to the linux platform then linux would as well use the stub implementation of windows. It is like turning of ACLs.
+
+### Update230907
+
+1. build a debug version using `colcon build --ament-cmake-args -DCMAKE_BUILD_TYPE=Debug`
+2. install gdb
+
+docker image: `tonghezhang/ros2_x86:humble_lint_debug`
