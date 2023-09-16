@@ -35,3 +35,9 @@ Due to issue [#1776](https://github.com/eclipse-iceoryx/iceoryx/issues/1176)
 2. install gdb
 
 docker image: `tonghezhang/ros2_x86:humble_lint_debug`
+
+### Update230916
+
+1. build a debug version using `colcon build --ament-cmake-args -DCMAKE_BUILD_TYPE=Debug --packages-up-to rclc`
+
+docker image: `tonghezhang/ros2_x86:humble_lint_debug_0.1`
