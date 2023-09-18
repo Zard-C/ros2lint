@@ -41,3 +41,7 @@ docker image: `tonghezhang/ros2_x86:humble_lint_debug`
 1. build a debug version using `colcon build --ament-cmake-args -DCMAKE_BUILD_TYPE=Debug --packages-up-to rclc`
 
 docker image: `tonghezhang/ros2_x86:humble_lint_debug_0.1`
+
+### feature
+
+We're going to install valgrind and cppcheck.
